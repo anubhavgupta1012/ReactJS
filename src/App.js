@@ -1,4 +1,4 @@
-import React ,{Component} from 'react';
+import React, {Component} from 'react';
 
 class App extends Component{
 constructor(){
@@ -22,18 +22,18 @@ render(){
                     <p> I am a software Engineer.</p>
                     <p>I currently work for Daffodil Softwares. </p>
                     {
-                        this.state.displayBio?( 
+                        this.state.displayBio ? (
                             <div>
-                            <p>I am 23 years old.</p>
-                            <p>Java is my Tech </p>
-                            <p>I need to learn the things. </p>
-                            <button onClick = {this.displayBioToggler}>Read Less</button>
-                            </div>):(
-                            <button onClick = {this.displayBioToggler}>Read More</button>
+                                <p>I am 23 years old.</p>
+                                <p>Java is my Tech </p>
+                                <p>I need to learn the things. </p>
+                                <button onClick={this.displayBioToggler}>Read Less</button>
+                            </div>) : (
+                            <button onClick={this.displayBioToggler}>Read More</button>
                             /* <button onClick = {this.displayBioToggler()}>Read More</button>
                               it is not called this way because it means that we are calling the method irrespective of clicking
                              so a recursive calling same method get produced. so we vaoid this  */
-                            )
+                        )
                     }
                     </div>
         )

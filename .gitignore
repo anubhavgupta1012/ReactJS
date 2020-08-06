@@ -6,6 +6,8 @@
 .pnp.js
 debug.log
 
+#IDE files
+/.idea
 # testing
 /coverage
 
