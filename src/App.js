@@ -1,13 +1,9 @@
 import React, {Component} from 'react';
 
 class App extends Component {
-    constructor() {
-        super();
-        this.state = {displayBio: false}
-        this.displayBioToggler = this.displayBioToggler.bind(this);
-    }
+    state = {displayBio: false};
 
-    displayBioToggler() {
+    displayBioToggler = () => {
         this.setState({displayBio: !this.state.displayBio});
         /*this.state.displayBio = !this.state.displayBio;  //bad practice in react
         Never directly modify the state
