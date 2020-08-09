@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import RenderProjects from "./RenderProjects";
 
 class App extends Component {
     state = {displayBio: false};
@@ -31,6 +32,8 @@ class App extends Component {
                          so a recursive calling same method get produced. so we vaoid this  */
                     )
                 }
+                <hr />
+               <RenderProjects />
             </div>
         )
     }
