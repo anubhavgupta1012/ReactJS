@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import RenderProjects from "./RenderProjects";
+import Social from "./Social";
+import './index.css';
+import profile from './assets/profile.jpg';
 
 class App extends Component {
     state = {displayBio: false};
@@ -15,6 +18,7 @@ class App extends Component {
     render() {
         return (
             <div>
+                <img src={profile} className="profile"/>
                 <h1>Hi , This is Anubhav.</h1>
                 <p> I am a software Engineer.</p>
                 <p>I currently work for Daffodil Softwares. </p>
@@ -32,8 +36,10 @@ class App extends Component {
                          so a recursive calling same method get produced. so we vaoid this  */
                     )
                 }
-                <hr />
-               <RenderProjects />
+                <hr/>
+                <RenderProjects />
+                <hr/>
+                <Social />
             </div>
         )
     }
